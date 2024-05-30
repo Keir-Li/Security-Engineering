@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keir Li - Security Management (V6.6)</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="intro" class="jumbotron">
+    <video autoplay muted loop id="background-video">
+        <source src="6330771-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <div class="introduction">
+        <div class="intro-text">
+            <span class="intro-header">Hi. I'm Keir.</span><br>
+            <span class="learn-more">Click on this text to learn more about me.</span>
+        </div>
+    </div>
+
+   <div id="fullDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Modal content will be inserted here -->
+        </div>
+    </div>
+
+
+
+
+<!-- Animated text and finger -->
+<div class="animated-text">
+  <div class="message">Click the buttons below. Take a look at my CV.</div>
+  <div class="finger"></div>
+</div>
+</div>
+
+<!-- Bottom bar -->
+    <div class="bottom-bar">
+        <!-- Button group -->
+        <div class="buttons">
+            <button id="intro-btn" class="button active" data-section="intro">My Intro</button>
+            <button id="experience-btn" class="button" data-section="experience">My Experience</button>
+            <button id="skills-btn" class="button" data-section="skills">My Skills</button>
+            <button id="contact-btn" class="button" data-section="contact">My Contact</button>
+        </div>
+    </div>
+
+
+    <!-- Content sections -->
+    <div id="intro-content" class="content active">
+    <!-- HOME SCREEN LAYOUT -->  
+    </div>
+
+<div id="experience-content" class="content">
+    <div class="container">
+        <h2>My Experience</h2>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow h-100 minimized-card card1" id="card2">
+                    <img src="engineeringicon.png" class="mx-auto d-block mt-3" alt="Security Engineer" style="max-width: 100px;">
+                    <div class="card-body" style="color: black; overflow-y: auto; max-height: 300px;">
+                        <h5 class="card-title"><strong>Security Engineer</strong></h5>
+                        <p class="card-subtitle mb-2 text-muted">Fortune 500 Global Engineering Provider</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow h-100 minimized-card card2" id="card2">
+                    <img src="recruitmenticon.png" class="mx-auto d-block mt-3" alt="Security Engineer" style="max-width: 100px;">
+                    <div class="card-body" style="color: black; overflow-y: auto; max-height: 300px;">
+                        <h5 class="card-title"><strong>Senior Software Engineer</strong></h5>
+                        <p class="card-subtitle mb-2 text-muted">World Class Leading Recruitment Organisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow h-100 minimized-card card3" id="card3">
+                    <img src="infrastructureicon.png" class="mx-auto d-block mt-3" alt="Security Engineer" style="max-width: 100px;">
+                    <div class="card-body" style="color: black; overflow-y: auto; max-height: 300px;">
+                        <h5 class="card-title"><strong>Application Support Lead</strong></h5>
+                        <p class="card-subtitle mb-2 text-muted">National Infrastructure Hub</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow h-100 minimized-card card4" id="card4">
+                    <img src="interneticon.png" class="mx-auto d-block mt-3" alt="Security Engineer" style="max-width: 100px;">
+                    <div class="card-body" style="color: black; overflow-y: auto; max-height: 300px;">
+                        <h5 class="card-title"><strong>Senior Technical Analyst</strong></h5>
+                        <p class="card-subtitle mb-2 text-muted">Global Cybersecurity Trust Provider</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more columns for additional job experiences -->
+        </div>
+    </div>
+</div> 
+
+
+
+<div id="skills-content" class="content">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skill-category">
+            <h3>SECURITY</h3>
+                <div class="skill-card">
+                    <div class="skill-name">Security Testing: Snyk ,  Rapid7,  Contrast-Assess</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Vulnerability Management: Mend, Tenable Nessus,  SonarQube</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Risk & Compliance: OWASP Top 10, CWE 25, Cyber Essentials, ISO, Governance</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Cryptography: Encryption & SSL</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Security Alerts & Software Release Security Reviews</div>
+                </div>
+            </div>
+
+        <div class="skill-category">
+            <h3>LEADERSHIP & MANAGEMENT</h3>
+                <div class="skill-card">
+                    <div class="skill-name">Team Building: Development, Mentoring, Change Management</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Incident Response: Strategy Implementation, Risk Mitigation</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Vendor and Contracts Management</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Incident Response and Mitigation</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Cost Saving Optimisation Strategist</div>
+                </div>
+            </div>
+
+
+        <div class="skill-category">
+            <h3>CLOUD & SYSTEMS</h3>
+                <div class="skill-card">
+                    <div class="skill-name">AWS & Azure: Cloud Security, Infrastructure as Code (CloudFormation, ARM, Terraform)</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">DevOps: CI/CD (Azure DevOps, GitHub, Jenkins)</div>
+                </div>
+            </div>
+
+
+        <div class="skill-category">
+            <h3>TOOLS & TECHNOLOGIES</h3>
+                <div class="skill-card">
+                    <div class="skill-name">Monitoring: Splunk, BigPanda</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Access Control: MFA, Access Keys, Password Management (KeePass, LastPass)</div>
+                </div>
+            </div>
+        
+        <!-- Add more skill categories here -->
+    </div>
+</div>
+
+
+
+
+<div id="contact-content" class="content">
+    <div class="container">
+        <h2>My Contact</h2>
+        <div class="card border-0 shadow">
+            <div class="card-body text-center">
+                <img src="sendemailicon.png" class="email-icon" alt="Email">
+                    <div class="email-contact">
+                    <div>
+                        <h4>Work With Me?</h4>
+                        <a href="#" class="email-link" onclick="copyToClipboard('keirliwork@gmail.com')">keirliwork@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<script>
+    // Function to open modal with full details
+    function openModal(details) {
+        const fullDetailsContent = document.querySelector(".modal-content");
+        if (fullDetailsContent) {
+            // Clear previous content
+            fullDetailsContent.innerHTML = details;
+
+            // Add close button
+            const closeButton = document.createElement("span");
+            closeButton.classList.add("close");
+            closeButton.innerHTML = "&times;";
+            fullDetailsContent.prepend(closeButton); // Prepend to ensure it's at the top
+
+            // Show modal
+            modal.style.display = "block";
+
+            // Close the modal when the user clicks on the close button
+            closeButton.addEventListener("click", () => {
+                modal.style.display = "none";
+            });
+        } else {
+            console.error("Modal content element not found");
+        }
+    }
+
+    // Function to open intro modal
+    function openIntroModal() {
+        const details = `
+            <h2>More about Keir</h2>
+            <ul>
+                <li>I'm a results-driven Security leader with a proven track record of success in multinational cybersecurity trust organisations.</li>
+                <li>✅ Proven track record of elevating performance excellence</li>
+                <li>✅ Delivering exceptional results</li>
+                <li>✅ Fostering positive relationships</li>
+                <li>✅ Adept in implementing cutting-edge solutions</li>
+                <li>✅ Contributing to digital resiliency</li>
+                <li>✅ Driving operational excellence in Security management</li>
+            </ul>
+        `;
+        openModal(details);
+    }
+
+    // Get the modal
+    const modal = document.getElementById("fullDetailsModal");
+
+    // Close the modal when the user clicks outside the modal content
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    // Open the modal when the "Learn more about me here" text is clicked
+    const learnMoreElement = document.querySelector(".learn-more");
+    if (learnMoreElement) {
+        learnMoreElement.addEventListener("click", openIntroModal);
+    } else {
+        console.error("Learn more element not found");
+    }
+
+    // Function to generate modal content based on card index
+    function generateModalContent(index) {
+        let title, company, skills, leadership, expertise;
+
+        switch (index) {
+            case 1:
+                title = "Security Engineer";
+                company = "Fortune 500 Global Engineering Provider";
+                skills = "Cybersecurity | Snyk (SAST) | Rapid7 (DAST) | Contrast-Assess (IAST) | Open Source Scanning (Mend) | Vulnerability Scanning (Tenable Nessus) | SonarQube (SCA) | MFA & Access Keys | Pen Testing | Crowdstrike (Intrusion Detection) | Deprecated OS | Container Critical/Top Issues | Incident Management | Security Release Review | AWS | Azure | DevOps | Threat Modeling | OWASP Top 10 | CWE 25 | Risk Score Management | Mentoring";
+                leadership = "Spearheaded cybersecurity initiatives, fostering a culture of security awareness and collaboration while ensuring prompt mitigation of vulnerabilities and adherence to industry standards.";
+                expertise = "Led security projects, conducted risk assessments, and implemented controls, translating technical concepts for non-technical stakeholders, and evaluating the effectiveness of security processes through strategic analysis.";
+                break;
+            case 2:
+                title = "Senior Software Engineer";
+                company = "World Class Leading Recruitment Organisation";
+                skills = "Spunk Monitoring & Alerting | Salesforce | Waterfall | AWS | Mulesoft API Management | DevOps | Vulnerability & Patching Manager | MoveItAutomation | ServiceNow | BigPanda | Cybersecurity | Incident Management | KeePass Security Set up & Management | Jira | Documentation and KB Builder";
+                leadership = "Led migration project from outdated password manager to new solution, ensuring smooth transition and enhanced security measures. Implemented documentation for Splunk Monitoring & Alerting system, improving system visibility and response time to security incidents. Led vulnerability & patching management efforts.";
+                expertise = "Proficient in Salesforce, AWS, and DevOps practices. Managed incident responses and documentation processes for improved efficiency.";
+                break;
+            case 3:
+                title = "Application Support Lead";
+                company = "National Infrastructure Hub";
+                skills = ".NET Framework, Core, 5 & 6 | Blazor | Scrum/Agile | GitHub & DevOps | UAT Lead | Azure | API Management | IAC ARM Templates | Cybersecurity | 365 & Active Directory | LastPass Security | Phishing Lead & Auditor | Migrations (Azure & SharePoint) | Technical & Supporting Application Lead | Documentation";
+                leadership = "Led UAT efforts for critical applications, ensuring smooth deployment and user acceptance. Implemented LastPass Security and conducted phishing audits for enhanced cybersecurity. Managed migration of SharePoint from on-premise to cloud, implementing governance measures.";
+                expertise = "Skilled in .NET Framework, Azure, and API management. Managed migrations to Azure & SharePoint, streamlining processes and improving system reliability.";
+                break;
+            case 4:
+                title = "Senior Technical Analyst";
+                company = "Global Cybersecurity Trust Provider";
+                skills = "Cybersecurity | UAT & Hypercare | Jira Incident & Bug Ticket Manager | Azure | Salesforce | Project & Process Management | Senior POC, Out of Hours & Escalation Point | Global Partner Trainer (USA & Europe)";
+                leadership = "Managed as the Senior POC and escalation point mentoring the team, ensuring timely resolution of critical issues. Trained global partners on cybersecurity and usage of products.";
+                expertise = "Proficient in cybersecurity practices, project management, and Salesforce. Managed Jira incident & bug tickets for efficient issue resolution.";
+                break;
+            default:
+                title = "Default Title";
+                company = "Default Company";
+                skills = "Default Skill 1 | Default Skill 2";
+                leadership = "Default leadership text";
+                expertise = "Default expertise text";
+        }
+
+        return `
+            <h2>${title}</h2>
+            <h4>${company}</h4>
+            <div class="modal-section skills">
+                <strong>Skills:</strong> <span class="skills-list" style="padding-bottom: 6vh;border-bottom: 2px double">${skills}</span>
+            </div>
+            <div class="modal-section leadership">
+                <strong>Leadership:</strong>
+                <p>${leadership}</p>
+            </div>
+            <div class="modal-section expertise">
+                <strong>Expertise:</strong>
+                <p>${expertise}</p>
+            </div>
+        `;
+    }
+
+    // Add event listeners to each minimized card for click only
+    const minimizedCards = document.querySelectorAll(".minimized-card");
+    minimizedCards.forEach((card, index) => {
+        card.addEventListener("click", () => {
+            const fullDetails = generateModalContent(index + 1);
+            openModal(fullDetails);
+        });
+    });
+
+    // Function to show content based on sectionId
+    function showContent(sectionId) {
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        document.getElementById(sectionId + '-btn').classList.add('active');
+
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => content.classList.remove('active'));
+        document.getElementById(sectionId + '-content').classList.add('active');
+
+        // Show or hide the intro text and animated text based on which section is active
+        if (sectionId === 'intro') {
+            document.querySelector('.animated-text').classList.remove('text-hidden');
+            document.querySelector('.finger').classList.remove('finger-hidden');
+            document.querySelector('.intro-text').classList.remove('text-hidden');
+            document.querySelector('.intro-header').classList.remove('text-hidden');   
+            document.querySelector('.intro-subheader').classList.remove('text-hidden');   
+
+            // Hide other sections
+            document.querySelectorAll('.content').forEach(content => {
+                if (content.id !== 'intro-content') {
+                    content.classList.add('text-hidden');
+                }
+            });
+        } else {
+            document.querySelector('.animated-text').classList.add('text-hidden');
+            document.querySelector('.finger').classList.add('finger-hidden');
+
+            // Hide intro text and header
+            document.querySelector('.intro-text').classList.add('text-hidden');
+            document.querySelector('.intro-header').classList.add('text-hidden');   
+            document.querySelector('.intro-subheader').classList.add('text-hidden');   
+
+            // Show other sections
+            document.getElementById(sectionId + '-content').classList.remove('text-hidden');
+        }
+    }
+
+    // Add event listeners to navigation buttons
+    const navButtons = document.querySelectorAll('.button');
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const sectionId = button.getAttribute('data-section');
+            showContent(sectionId);
+        });
+    });
+
+    // When the page loads, initially show the intro content
+    showContent('intro');
+</script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
