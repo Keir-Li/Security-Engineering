@@ -130,6 +130,7 @@ ul {
     color: black;
     overflow-y: auto;
     max-height: 300px;
+    padding: 1rem !important;
 }
 
 .card-title {
